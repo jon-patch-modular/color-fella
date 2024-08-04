@@ -7,6 +7,10 @@ signal max_health_changed(amount:int)
 signal health_changed(amount:int) 
 signal ceased_to_be #fucking dead. Deceased. this is an EX-character.
 
+func _ready() -> void:
+	health_changed.emit(health)
+	max_health_changed.emit(health)
+
 #__Parameters which might or might not be properties______
 @export var max_health: int = 20:
 	get:
