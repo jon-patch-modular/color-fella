@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjr4204vqg18d"]
+
+[ext_resource type="Texture2D" uid="uid://brrjceyqan4ov" path="res://Recursos/sprites/purp_platform.png" id="1_6ui65"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5lee8"]
+size = Vector2(32, 8)
+
+[node name="Platform" type="AnimatableBody2D"]
+z_index = 3
+scale = Vector2(2, 2)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_6ui65")
+region_enabled = true
+region_rect = Rect2(24, 0, 32, 8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 5
+shape = SubResource("RectangleShape2D_5lee8")
+one_way_collision = true

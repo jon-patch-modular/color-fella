@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://hybthp6hv6yc"]
+
+[ext_resource type="FontFile" uid="uid://vlb1ghnc0iis" path="res://Recursos/Fonst/DoubleHomicide.ttf" id="1_vtlan"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_dsi8d"]
+font = ExtResource("1_vtlan")
+font_color = Color(0.192157, 0, 0.203922, 1)
+shadow_size = 0
+
+[node name="80085" type="Label"]
+offset_left = -744.0
+offset_top = -72.0
+offset_right = -696.0
+offset_bottom = -40.0
+text = "80085"
+label_settings = SubResource("LabelSettings_dsi8d")

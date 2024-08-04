@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7y05oxjngabo"]
+
+[ext_resource type="AudioStream" uid="uid://o6mrbxeuja60" path="res://Recursos/Audio/Music/Purple Panic.ogg" id="1_mjudf"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_mjudf")
+autoplay = true
+bus = &"BGM"

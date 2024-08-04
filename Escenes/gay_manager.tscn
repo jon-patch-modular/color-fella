@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgu8qvvpj00fh"]
+
+[ext_resource type="Script" path="res://Codi/gay_manager.gd" id="1_ckofc"]
+
+[node name="Gay Manager" type="Node"]
+script = ExtResource("1_ckofc")
+
+[node name="Level Restart Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="Level Restart Timer" to="." method="_on_restart_timeout"]

@@ -1,0 +1,78 @@
+[gd_scene load_steps=12 format=3 uid="uid://cj8x377bsu5v8"]
+
+[ext_resource type="Script" path="res://Codi/enemic_terrestre.gd" id="1_1eo04"]
+[ext_resource type="Texture2D" uid="uid://bsxiel0ocpi8t" path="res://Recursos/sprites/purp_bad_blue.png" id="1_sfjnv"]
+[ext_resource type="Script" path="res://Codi/hurtful_area.gd" id="3_qhjac"]
+[ext_resource type="Script" path="res://Codi/enemy_health.gd" id="4_ds6s7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pw3h6"]
+size = Vector2(16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2klyt"]
+atlas = ExtResource("1_sfjnv")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_442bd"]
+atlas = ExtResource("1_sfjnv")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xk8dq"]
+atlas = ExtResource("1_sfjnv")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o4ucl"]
+atlas = ExtResource("1_sfjnv")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pke33"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2klyt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_442bd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xk8dq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o4ucl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h73ri"]
+size = Vector2(16, 16)
+
+[node name="Bot Reptant" type="CharacterBody2D"]
+script = ExtResource("1_1eo04")
+
+[node name="Physics hitbox" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_pw3h6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_pke33")
+autoplay = "default"
+frame_progress = 0.789643
+flip_h = true
+
+[node name="RayCast2D right" type="RayCast2D" parent="."]
+target_position = Vector2(24, 0)
+
+[node name="RayCast2D lfet" type="RayCast2D" parent="."]
+target_position = Vector2(-24, 0)
+
+[node name="HurtfulArea" type="Area2D" parent="."]
+script = ExtResource("3_qhjac")
+
+[node name="Hurt hitbox" type="CollisionShape2D" parent="HurtfulArea"]
+shape = SubResource("RectangleShape2D_h73ri")
+debug_color = Color(0.966407, 0, 0.480722, 0.42)
+
+[node name="Health" type="Node" parent="."]
+script = ExtResource("4_ds6s7")
+
+[connection signal="ceased_to_be" from="Health" to="Health" method="_on_ceased_to_be"]

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://c84jsgvk4usof"]
+
+[ext_resource type="Script" path="res://Codi/rip.gd" id="1_w0d8b"]
+
+[node name="Killzone" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_w0d8b")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlqoc5o37iv83"]
+
+[ext_resource type="FontFile" uid="uid://vlb1ghnc0iis" path="res://Recursos/Fonst/DoubleHomicide.ttf" id="1_cdsy3"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qrh3m"]
+font = ExtResource("1_cdsy3")
+font_color = Color(0.192157, 0, 0.203922, 1)
+shadow_size = 0
+
+[node name="8 és igual a és igual a és igual a D" type="Label"]
+offset_left = -880.0
+offset_top = 31.9999
+offset_right = -832.0
+offset_bottom = 63.9999
+rotation = -0.789765
+text = "8===D"
+label_settings = SubResource("LabelSettings_qrh3m")
