@@ -45,7 +45,6 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h73ri"]
-size = Vector2(16, 16)
 
 [node name="Bot Reptant" type="CharacterBody2D"]
 script = ExtResource("1_1eo04")
@@ -66,13 +65,14 @@ target_position = Vector2(24, 0)
 target_position = Vector2(-24, 0)
 
 [node name="HurtfulArea" type="Area2D" parent="."]
+collision_mask = 2
 script = ExtResource("3_qhjac")
 
 [node name="Hurt hitbox" type="CollisionShape2D" parent="HurtfulArea"]
 shape = SubResource("RectangleShape2D_h73ri")
 debug_color = Color(0.966407, 0, 0.480722, 0.42)
 
-[node name="Health" type="Node" parent="."]
+[node name="Health" type="Node2D" parent="."]
 script = ExtResource("4_ds6s7")
 
 [connection signal="ceased_to_be" from="Health" to="Health" method="_on_ceased_to_be"]

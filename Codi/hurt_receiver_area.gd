@@ -4,6 +4,10 @@ extends Area2D
 #Emmagatzema node germà Health quan les escenes estiguin carregades
 @onready var health : Health = $"../Health"
 
+#Connecta senyal
+func _ready() -> void:
+	area_entered.connect(_on_area_entered)
+
 func _on_area_entered(hurt : HurtfulArea):
 	
 	#Nullchecks: 

@@ -12,7 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://c50r1qipsyau7" path="res://Escenes/Game Elements/One-Way Platforms/Invisible_Platform_5.tscn" id="12_27m7q"]
 [ext_resource type="PackedScene" uid="uid://djnftwnws0p63" path="res://Escenes/Game Elements/One-Way Platforms/invisible_Platform_1.tscn" id="13_avi2e"]
 [ext_resource type="PackedScene" uid="uid://bc6irx3r46jel" path="res://Escenes/Game Elements/One-Way Platforms/Invisible_Platform_2.tscn" id="14_lmxg8"]
-[ext_resource type="PackedScene" uid="uid://c84jsgvk4usof" path="res://Escenes/rip.tscn" id="15_twwtr"]
+[ext_resource type="PackedScene" uid="uid://c84jsgvk4usof" path="res://Escenes/Components/hurtzone.tscn" id="15_twwtr"]
 [ext_resource type="PackedScene" uid="uid://cj8x377bsu5v8" path="res://Escenes/Game Elements/Mobs/Computer Bot.tscn" id="16_fujkr"]
 [ext_resource type="FontFile" uid="uid://vlb1ghnc0iis" path="res://Recursos/Fonst/DoubleHomicide.ttf" id="17_dgsxv"]
 [ext_resource type="PackedScene" uid="uid://dlqoc5o37iv83" path="res://Escenes/Game Elements/Deco/8_és_igual_a_és_igual_a_és_igual_a_d.tscn" id="18_ld8n2"]
@@ -747,6 +747,8 @@ position = Vector2(2160, -88)
 
 [node name="Killzone" parent="." instance=ExtResource("15_twwtr")]
 position = Vector2(-256, 192)
+collision_mask = 0
+instakill = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 shape = SubResource("WorldBoundaryShape2D_syhrx")

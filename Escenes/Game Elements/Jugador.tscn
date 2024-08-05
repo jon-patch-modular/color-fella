@@ -1,10 +1,14 @@
-[gd_scene load_steps=28 format=3 uid="uid://b0alcauh40g2"]
+[gd_scene load_steps=31 format=3 uid="uid://b0alcauh40g2"]
 
 [ext_resource type="Script" path="res://Codi/Jugador.gd" id="1_ex5sr"]
 [ext_resource type="Texture2D" uid="uid://gjmh7l6sslg3" path="res://Recursos/sprites/purp guy idle.png" id="1_np5ix"]
 [ext_resource type="Texture2D" uid="uid://diy5ujm7iaiwe" path="res://Recursos/sprites/purp guy walcc.png" id="3_ktsfv"]
 [ext_resource type="Texture2D" uid="uid://7s8cxfak8e7t" path="res://Recursos/sprites/purp guy jump.png" id="3_lnh3s"]
+[ext_resource type="Script" path="res://Escenes/Game Elements/PlayerAnimation.gd" id="5_5bwpl"]
 [ext_resource type="Script" path="res://Codi/player_collision_handler.gd" id="5_n8ndh"]
+[ext_resource type="PackedScene" uid="uid://bah75l530e05b" path="res://Escenes/Components/hurt_receiver_area.tscn" id="7_5whbw"]
+[ext_resource type="Script" path="res://Codi/player_health.gd" id="8_md152"]
+[ext_resource type="PackedScene" uid="uid://cxswysvu7qs5q" path="res://Escenes/Components/health_label.tscn" id="9_as7wq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tjomd"]
 atlas = ExtResource("1_np5ix")
@@ -166,10 +170,6 @@ animations = [{
 radius = 5.0
 height = 23.0
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ggh87"]
-radius = 4.0
-height = 20.0
-
 [node name="Player2D" type="CharacterBody2D"]
 z_index = 10
 collision_layer = 2
@@ -182,15 +182,16 @@ sprite_frames = SubResource("SpriteFrames_7jbtw")
 animation = &"Run"
 autoplay = "Idle"
 frame_progress = 0.827305
+script = ExtResource("5_5bwpl")
 
 [node name="PhysicsHitbox" type="CollisionShape2D" parent="."]
 position = Vector2(0, -11.5)
 shape = SubResource("CapsuleShape2D_nyeyq")
 script = ExtResource("5_n8ndh")
 
-[node name="DamageHitbox" type="Area2D" parent="."]
-collision_layer = 2
+[node name="HurtReceiverArea" parent="." instance=ExtResource("7_5whbw")]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="DamageHitbox"]
-position = Vector2(0, -11)
-shape = SubResource("CapsuleShape2D_ggh87")
+[node name="Health" type="Node2D" parent="."]
+script = ExtResource("8_md152")
+
+[node name="Label" parent="Health" instance=ExtResource("9_as7wq")]

@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxswysvu7qs5q"]
+
+[ext_resource type="FontFile" uid="uid://vlb1ghnc0iis" path="res://Recursos/Fonst/DoubleHomicide.ttf" id="1_3n3mk"]
+[ext_resource type="Script" path="res://Codi/HealthLabel.gd" id="2_t7xpy"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_cl0a0"]
+font = ExtResource("1_3n3mk")
+
+[node name="Label" type="Label"]
+offset_top = -34.0
+offset_right = 40.0
+offset_bottom = -11.0
+scale = Vector2(0.5, 0.5)
+text = "lmao"
+label_settings = SubResource("LabelSettings_cl0a0")
+script = ExtResource("2_t7xpy")

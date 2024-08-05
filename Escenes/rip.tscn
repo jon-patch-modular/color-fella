@@ -1,9 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://c84jsgvk4usof"]
+[gd_scene load_steps=2 format=3 uid="uid://b1q7mh0f4abxf"]
 
-[ext_resource type="Script" path="res://Codi/rip.gd" id="1_w0d8b"]
+[ext_resource type="Script" path="res://Codi/hurtful_area.gd" id="1_7oy7e"]
 
 [node name="Killzone" type="Area2D"]
 collision_mask = 2
-script = ExtResource("1_w0d8b")
+script = ExtResource("1_7oy7e")
+instakill = true
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
