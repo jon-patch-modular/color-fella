@@ -1,4 +1,4 @@
-@icon("res://icon.svg")
+@icon("res://Recursos/sprites/icons/icon_health.png")
 class_name Health
 extends Node
 

@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dttcy6fc25tq2" path="res://Recursos/sprites/purp_tileset.png" id="3_ex8sp"]
 [ext_resource type="PackedScene" uid="uid://bxhqvm22euipu" path="res://Escenes/Game Elements/invisible_block.tscn" id="4_3ojuc"]
-[ext_resource type="PackedScene" uid="uid://b0alcauh40g2" path="res://Escenes/Game Elements/Mobs/Jugador.tscn" id="5_8l0kn"]
+[ext_resource type="PackedScene" uid="uid://b0alcauh40g2" path="res://Escenes/Game Elements/Jugador.tscn" id="5_8l0kn"]
 [ext_resource type="PackedScene" uid="uid://bmxf7oiq5hx0c" path="res://Escenes/Game Elements/coin.tscn" id="6_loxhy"]
 [ext_resource type="PackedScene" uid="uid://dwftovon4qvji" path="res://Escenes/Game Elements/One-Way Platforms/smolplatform.tscn" id="7_tebiq"]
 [ext_resource type="PackedScene" uid="uid://dc1wrsrop5oi1" path="res://Escenes/Game Elements/One-Way Platforms/platfing_movor_verticle.tscn" id="8_wjo7m"]
