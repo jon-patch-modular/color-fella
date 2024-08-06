@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ucadcangliuq"
-path="res://.godot/imported/purp guy jump.png-6c7d724cba7171cabade63d2a3fb8ebd.ctex"
+uid="uid://bajkx820fjxlw"
+path="res://.godot/imported/purp_bad_0004.png-04e26a8510e34310b3713e7fc2a818bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Recursos/sprites/Projectes/purp guy jump.png"
-dest_files=["res://.godot/imported/purp guy jump.png-6c7d724cba7171cabade63d2a3fb8ebd.ctex"]
+source_file="res://Recursos/GFX/mobs/purp_bad_0004.png"
+dest_files=["res://.godot/imported/purp_bad_0004.png-04e26a8510e34310b3713e7fc2a818bd.ctex"]
 
 [params]
 

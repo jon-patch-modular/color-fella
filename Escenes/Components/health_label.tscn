@@ -7,6 +7,7 @@
 font = ExtResource("1_3n3mk")
 
 [node name="Label" type="Label"]
+process_priority = 1
 offset_top = -34.0
 offset_right = 40.0
 offset_bottom = -11.0

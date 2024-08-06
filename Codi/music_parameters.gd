@@ -13,7 +13,13 @@ var speed_ratios : Dictionary = {
 var speed_scale : float:
 	get: return speed_ratios[speed_mode]
 
-enum SpeedMode {boring = 0, vapor = -1, night = 1, help = 10, snooze = -10}
+enum SpeedMode {
+	boring = 0, #Normal speed
+	vapor = -1, #Slowed down
+	night = 1, #Sped up
+	help = 10, #Cocanium overdose
+	snooze = -10 #Change the batteries!
+}
 
 func _ready() -> void:
 	pitch_scale = speed_ratios[speed_mode]

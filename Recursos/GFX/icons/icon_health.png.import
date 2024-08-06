@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bw3hbspcxpdp4"
-path="res://.godot/imported/purp_collectobles.png-2b4e0784170c6804235302fa228e87e6.ctex"
+uid="uid://dqpmwcux33v2h"
+path="res://.godot/imported/icon_health.png-40a8aa526106c5c1d41e08ee0078a0b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Recursos/sprites/purp_collectobles.png"
-dest_files=["res://.godot/imported/purp_collectobles.png-2b4e0784170c6804235302fa228e87e6.ctex"]
+source_file="res://Recursos/GFX/icons/icon_health.png"
+dest_files=["res://.godot/imported/icon_health.png-40a8aa526106c5c1d41e08ee0078a0b4.ctex"]
 
 [params]
 

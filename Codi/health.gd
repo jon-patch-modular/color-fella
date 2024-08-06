@@ -6,8 +6,6 @@ extends Node2D
 signal health_changed(health:int, max_health:int) 
 signal ceased_to_be 
 
-func _ready() -> void:
-	health_changed.emit(health, max_health) #initialize health stuffs
 
 #__Parameters
 @export var max_health: int = 20:
@@ -50,5 +48,8 @@ func _ready() -> void:
 			print("This is an EX-" + get_parent().name) #DEBUG
 			ceased_to_be.emit()
 
+func _ready() -> void:
+	health_changed.emit(health, max_health) #initialize health stuffs
+	
 var immortal: bool = false
 

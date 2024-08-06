@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://bmxf7oiq5hx0c"]
 
-[ext_resource type="Texture2D" uid="uid://bw3hbspcxpdp4" path="res://Recursos/sprites/purp_collectobles.png" id="1_ckxxk"]
+[ext_resource type="Texture2D" uid="uid://bw3hbspcxpdp4" path="res://Recursos/GFX/tiles/purp_collectobles.png" id="1_ckxxk"]
 [ext_resource type="Script" path="res://Codi/coin.gd" id="1_f3x5j"]
 [ext_resource type="AudioStream" uid="uid://yuxqahvghmwf" path="res://Recursos/Audio/SFX/coin_s.ogg" id="3_p2e0y"]
 

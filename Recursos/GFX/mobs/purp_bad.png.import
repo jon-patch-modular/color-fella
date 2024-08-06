@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqpmwcux33v2h"
-path="res://.godot/imported/icon_health.png-39adc2fc0e413db61500fd5451db8ea5.ctex"
+uid="uid://bt3mq8hxlvacn"
+path="res://.godot/imported/purp_bad.png-e47ab11d4ca47abd4fa0e1ee0055ac64.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Recursos/sprites/icons/icon_health.png"
-dest_files=["res://.godot/imported/icon_health.png-39adc2fc0e413db61500fd5451db8ea5.ctex"]
+source_file="res://Recursos/GFX/mobs/purp_bad.png"
+dest_files=["res://.godot/imported/purp_bad.png-e47ab11d4ca47abd4fa0e1ee0055ac64.ctex"]
 
 [params]
 

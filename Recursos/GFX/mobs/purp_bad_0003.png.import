@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://diy5ujm7iaiwe"
-path="res://.godot/imported/purp guy walcc.png-972585d71b02d73b5ee887670fd309f6.ctex"
+uid="uid://c4s02hko5fmnq"
+path="res://.godot/imported/purp_bad_0003.png-60efcec5a6102fa1fa3a28c9bd0e61ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Recursos/sprites/purp guy walcc.png"
-dest_files=["res://.godot/imported/purp guy walcc.png-972585d71b02d73b5ee887670fd309f6.ctex"]
+source_file="res://Recursos/GFX/mobs/purp_bad_0003.png"
+dest_files=["res://.godot/imported/purp_bad_0003.png-60efcec5a6102fa1fa3a28c9bd0e61ce.ctex"]
 
 [params]
 

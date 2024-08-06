@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dttcy6fc25tq2"
-path="res://.godot/imported/purp_tileset.png-bb083e9c2db802af8859828af2c6f319.ctex"
+uid="uid://7s8cxfak8e7t"
+path="res://.godot/imported/purp guy jump.png-94c41e4ce3f0251bba0cd9bce4581e3c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Recursos/sprites/purp_tileset.png"
-dest_files=["res://.godot/imported/purp_tileset.png-bb083e9c2db802af8859828af2c6f319.ctex"]
+source_file="res://Recursos/GFX/mobs/purp guy jump.png"
+dest_files=["res://.godot/imported/purp guy jump.png-94c41e4ce3f0251bba0cd9bce4581e3c.ctex"]
 
 [params]
 

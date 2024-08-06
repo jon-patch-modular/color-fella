@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bt3mq8hxlvacn"
-path="res://.godot/imported/purp_bad.png-7bc38bbd05b41d35aaf8112a31d300bb.ctex"
+uid="uid://brrjceyqan4ov"
+path="res://.godot/imported/purp_platform.png-02e601d189b9d67cbd605257ac96868d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Recursos/sprites/purp_bad.png"
-dest_files=["res://.godot/imported/purp_bad.png-7bc38bbd05b41d35aaf8112a31d300bb.ctex"]
+source_file="res://Recursos/GFX/tiles/purp_platform.png"
+dest_files=["res://.godot/imported/purp_platform.png-02e601d189b9d67cbd605257ac96868d.ctex"]
 
 [params]
 

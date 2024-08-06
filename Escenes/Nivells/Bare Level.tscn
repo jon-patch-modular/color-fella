@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://8fet61bj5b2s"]
 
-[ext_resource type="Texture2D" uid="uid://dttcy6fc25tq2" path="res://Recursos/sprites/purp_tileset.png" id="3_t4i2w"]
-[ext_resource type="PackedScene" uid="uid://b0alcauh40g2" path="res://Escenes/Game Elements/Mobs/Jugador.tscn" id="5_yh8c8"]
-[ext_resource type="PackedScene" uid="uid://c84jsgvk4usof" path="res://Escenes/Killzone.tscn" id="15_kayot"]
+[ext_resource type="Texture2D" uid="uid://dttcy6fc25tq2" path="res://Recursos/GFX/tiles/purp_tileset.png" id="3_t4i2w"]
+[ext_resource type="PackedScene" uid="uid://b0alcauh40g2" path="res://Escenes/Game Elements/Jugador.tscn" id="5_yh8c8"]
+[ext_resource type="PackedScene" uid="uid://c84jsgvk4usof" path="res://Escenes/Components/hurtzone.tscn" id="15_kayot"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_04ekp"]
 texture = ExtResource("3_t4i2w")

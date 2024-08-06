@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bsxiel0ocpi8t"
-path="res://.godot/imported/purp_bad_blue.png-5e8f99621abff1e453ddb6dd87d2c148.ctex"
+uid="uid://bw3hbspcxpdp4"
+path="res://.godot/imported/purp_collectobles.png-13a7528378d1dc986c443aab01d5aa74.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Recursos/sprites/purp_bad_blue.png"
-dest_files=["res://.godot/imported/purp_bad_blue.png-5e8f99621abff1e453ddb6dd87d2c148.ctex"]
+source_file="res://Recursos/GFX/tiles/purp_collectobles.png"
+dest_files=["res://.godot/imported/purp_collectobles.png-13a7528378d1dc986c443aab01d5aa74.ctex"]
 
 [params]
 

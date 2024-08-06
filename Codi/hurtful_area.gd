@@ -1,3 +1,4 @@
+@icon("res://Recursos/GFX/icons/icon_hurtful.png")
 class_name HurtfulArea
 extends Area2D
 

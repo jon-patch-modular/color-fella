@@ -1,0 +1,8 @@
+dev_07.08.24::::::::::::::::::::::::::::::::::::::::.
+
+· Creat la funcionalitat base de passos discrets de la IA d'enemic associada
+· Afegit problemes pel camí :)
+· Flippejat robot perque mirava a la esquerra?!?!?! wtf estic malalt
+· Ajustat alguns noms i ordre
+· No se si era aquesta versio pero ara etiqueta de debug health és general
+

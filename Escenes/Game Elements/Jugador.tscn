@@ -1,9 +1,9 @@
 [gd_scene load_steps=31 format=3 uid="uid://b0alcauh40g2"]
 
 [ext_resource type="Script" path="res://Codi/Jugador.gd" id="1_ex5sr"]
-[ext_resource type="Texture2D" uid="uid://gjmh7l6sslg3" path="res://Recursos/sprites/purp guy idle.png" id="1_np5ix"]
-[ext_resource type="Texture2D" uid="uid://diy5ujm7iaiwe" path="res://Recursos/sprites/purp guy walcc.png" id="3_ktsfv"]
-[ext_resource type="Texture2D" uid="uid://7s8cxfak8e7t" path="res://Recursos/sprites/purp guy jump.png" id="3_lnh3s"]
+[ext_resource type="Texture2D" uid="uid://gjmh7l6sslg3" path="res://Recursos/GFX/mobs/purp guy idle.png" id="1_np5ix"]
+[ext_resource type="Texture2D" uid="uid://diy5ujm7iaiwe" path="res://Recursos/GFX/mobs/purp guy walcc.png" id="3_ktsfv"]
+[ext_resource type="Texture2D" uid="uid://7s8cxfak8e7t" path="res://Recursos/GFX/mobs/purp guy jump.png" id="3_lnh3s"]
 [ext_resource type="Script" path="res://Escenes/Game Elements/PlayerAnimation.gd" id="5_5bwpl"]
 [ext_resource type="Script" path="res://Codi/player_collision_handler.gd" id="5_n8ndh"]
 [ext_resource type="PackedScene" uid="uid://bah75l530e05b" path="res://Escenes/Components/hurt_receiver_area.tscn" id="7_5whbw"]
@@ -174,9 +174,12 @@ height = 23.0
 z_index = 10
 collision_layer = 2
 floor_stop_on_slope = false
+floor_constant_speed = true
+floor_snap_length = 3.0
 script = ExtResource("1_ex5sr")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 10
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_7jbtw")
 animation = &"Run"

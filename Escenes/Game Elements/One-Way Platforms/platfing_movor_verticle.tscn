@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://dc1wrsrop5oi1"]
 
 [ext_resource type="PackedScene" uid="uid://cjr4204vqg18d" path="res://Escenes/Game Elements/One-Way Platforms/platform.tscn" id="1_jrql5"]
-[ext_resource type="Texture2D" uid="uid://dttcy6fc25tq2" path="res://Recursos/sprites/purp_tileset.png" id="2_hg1q6"]
+[ext_resource type="Texture2D" uid="uid://dttcy6fc25tq2" path="res://Recursos/GFX/tiles/purp_tileset.png" id="2_hg1q6"]
 
 [sub_resource type="Animation" id="Animation_pgvbl"]
 length = 0.001

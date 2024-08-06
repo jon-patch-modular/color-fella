@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gjmh7l6sslg3"
-path="res://.godot/imported/purp guy idle.png-7bcb2e9a9daa87b1316d95e1f9332dd7.ctex"
+uid="uid://bv1lysrtx53we"
+path="res://.godot/imported/purp_bad_0001.png-9b532beef5b833d36d072a2463876616.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Recursos/sprites/purp guy idle.png"
-dest_files=["res://.godot/imported/purp guy idle.png-7bcb2e9a9daa87b1316d95e1f9332dd7.ctex"]
+source_file="res://Recursos/GFX/mobs/purp_bad_0001.png"
+dest_files=["res://.godot/imported/purp_bad_0001.png-9b532beef5b833d36d072a2463876616.ctex"]
 
 [params]
 

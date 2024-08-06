@@ -1,3 +1,4 @@
+@icon("res://Recursos/GFX/icons/icon_hurtable.png")
 class_name HurtReceiverArea
 extends Area2D
 
@@ -6,7 +7,7 @@ extends Area2D
 
 #Connecta senyal
 func _ready() -> void:
-	area_entered.connect(_on_area_entered)
+	if !area_entered.is_connected(_on_area_entered): area_entered.connect(_on_area_entered)
 
 func _on_area_entered(hurt : HurtfulArea):
 	

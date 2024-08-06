@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://cj8x377bsu5v8"]
+[gd_scene load_steps=13 format=3 uid="uid://cj8x377bsu5v8"]
 
-[ext_resource type="Script" path="res://Codi/enemic_terrestre.gd" id="1_1eo04"]
-[ext_resource type="Texture2D" uid="uid://bsxiel0ocpi8t" path="res://Recursos/sprites/purp_bad_blue.png" id="1_sfjnv"]
+[ext_resource type="Script" path="res://Codi/horizontal_chonker.gd" id="1_4e26q"]
+[ext_resource type="Texture2D" uid="uid://bsxiel0ocpi8t" path="res://Recursos/GFX/mobs/purp_bad_blue.png" id="1_sfjnv"]
 [ext_resource type="Script" path="res://Codi/hurtful_area.gd" id="3_qhjac"]
 [ext_resource type="Script" path="res://Codi/enemy_health.gd" id="4_ds6s7"]
+[ext_resource type="PackedScene" uid="uid://cxswysvu7qs5q" path="res://Escenes/Components/health_label.tscn" id="5_jsmtw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pw3h6"]
 size = Vector2(16, 16)
@@ -47,7 +48,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h73ri"]
 
 [node name="Bot Reptant" type="CharacterBody2D"]
-script = ExtResource("1_1eo04")
+script = ExtResource("1_4e26q")
 
 [node name="Physics hitbox" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_pw3h6")
@@ -58,10 +59,10 @@ autoplay = "default"
 frame_progress = 0.789643
 flip_h = true
 
-[node name="RayCast2D right" type="RayCast2D" parent="."]
+[node name="RayCast2D R" type="RayCast2D" parent="."]
 target_position = Vector2(24, 0)
 
-[node name="RayCast2D lfet" type="RayCast2D" parent="."]
+[node name="RayCast2D L" type="RayCast2D" parent="."]
 target_position = Vector2(-24, 0)
 
 [node name="HurtfulArea" type="Area2D" parent="."]
@@ -74,5 +75,7 @@ debug_color = Color(0.966407, 0, 0.480722, 0.42)
 
 [node name="Health" type="Node2D" parent="."]
 script = ExtResource("4_ds6s7")
+
+[node name="Label" parent="Health" instance=ExtResource("5_jsmtw")]
 
 [connection signal="ceased_to_be" from="Health" to="Health" method="_on_ceased_to_be"]
