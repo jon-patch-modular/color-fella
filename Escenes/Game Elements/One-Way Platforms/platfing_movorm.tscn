@@ -1,7 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://dj8us4ygnkg2"]
+[gd_scene load_steps=8 format=3 uid="uid://dj8us4ygnkg2"]
 
 [ext_resource type="PackedScene" uid="uid://cjr4204vqg18d" path="res://Escenes/Game Elements/One-Way Platforms/platform.tscn" id="1_cd7io"]
-[ext_resource type="Texture2D" uid="uid://dttcy6fc25tq2" path="res://Recursos/GFX/tiles/purp_tileset.png" id="2_dcyw2"]
 
 [sub_resource type="Animation" id="Animation_pgvbl"]
 length = 0.001
@@ -33,6 +32,23 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [Vector2(224, 8), Vector2(224, 8), Vector2(32, 8), Vector2(32, 8)]
+}
+
+[sub_resource type="Animation" id="Animation_0w5qm"]
+resource_name = "lmfoao inv"
+length = 3.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("moving platform:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 2.5, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(32, 8), Vector2(32, 8), Vector2(224, 8), Vector2(224, 8)]
 }
 
 [sub_resource type="Animation" id="Animation_41k8k"]
@@ -69,23 +85,6 @@ tracks/0/keys = {
 "values": [Vector2(32, 8), Vector2(32, 8), Vector2(96, 8), Vector2(96, 8)]
 }
 
-[sub_resource type="Animation" id="Animation_0w5qm"]
-resource_name = "lmfoao inv"
-length = 3.0
-loop_mode = 2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("moving platform:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 2.5, 3),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(32, 8), Vector2(32, 8), Vector2(224, 8), Vector2(224, 8)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_kyqyi"]
 _data = {
 "RESET": SubResource("Animation_pgvbl"),
@@ -99,20 +98,6 @@ _data = {
 
 [node name="moving platform" parent="." instance=ExtResource("1_cd7io")]
 position = Vector2(224, 8)
-
-[node name="Sprite2D2" type="Sprite2D" parent="moving platform"]
-position = Vector2(-12, -8)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_dcyw2")
-region_enabled = true
-region_rect = Rect2(48, 32, 16, 16)
-
-[node name="Sprite2D3" type="Sprite2D" parent="moving platform"]
-position = Vector2(12, -8)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_dcyw2")
-region_enabled = true
-region_rect = Rect2(48, 32, 16, 16)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

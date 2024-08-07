@@ -1,8 +1,33 @@
 dev_07.08.24::::::::::::::::::::::::::::::::::::::::.
 
-· Creat la funcionalitat base de passos discrets de la IA d'enemic associada
-· Afegit problemes pel camí :)
-· Flippejat robot perque mirava a la esquerra?!?!?! wtf estic malalt
-· Ajustat alguns noms i ordre
-· No se si era aquesta versio pero ara etiqueta de debug health és general
+    · He arreglat la paleta morada perquè sigui visible. Té un rollo molt neó que em mola però s'haurà de contrastar amb altres monitors.
+
+    · He tret les antenes ràncies de les plataformes en moviment. Les segueixo trobant lletges (fer-les més primes?)
+
+    · Ojo: he descobert que un espai de mig personatge d'ample et permet acumular velocitat cap abaix uns segons (i viatjar entre universos paral·lels) (no és veritat) és possible que només succeeixi amb una one-way platform i un tile?
+
+    · Afegit noves idees per un tubo a Trello
+
+    · Començat tema Breaks vermell a la torre (no present al repositori)
+
+    · He Afegit espai per respirar entre punts d'aquest document :P
+
+    · He començat a emprar auriculars per evitar l'estrés dels gossos dels veïns >:(
+
+
+dev_06.08.24::::::::::::::::::::::::::::::::::::::::.
+
+    · Creat la funcionalitat base de passos discrets de la IA d'enemic associada
+
+    · Afegit problemes pel camí :)
+
+    · Flippejat robot perque mirava a la esquerra?!?!?! wtf estic malalt
+
+    · Ajustat alguns noms i ordre
+
+    · No se si era aquesta versio pero ara etiqueta de debug health és general
+
+    · Afegit aquet devlog!
+
+    · Après sobre herència
 

@@ -9,4 +9,3 @@ pitch_scale = 0.72
 autoplay = true
 bus = &"BGM"
 script = ExtResource("2_ghitt")
-speed_mode = 10

@@ -182,9 +182,8 @@ script = ExtResource("1_ex5sr")
 z_index = 10
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_7jbtw")
-animation = &"Run"
+animation = &"Idle"
 autoplay = "Idle"
-frame_progress = 0.827305
 script = ExtResource("5_5bwpl")
 
 [node name="PhysicsHitbox" type="CollisionShape2D" parent="."]
@@ -198,3 +197,4 @@ script = ExtResource("5_n8ndh")
 script = ExtResource("8_md152")
 
 [node name="Label" parent="Health" instance=ExtResource("9_as7wq")]
+visible = false
