@@ -3,3 +3,6 @@
 Recursos/Audio/*.zip filter=lfs diff=lfs merge=lfs -text
 Recursos/Audio/_projectes/*.zip filter=lfs diff=lfs merge=lfs -text
 *.zip filter=lfs diff=lfs merge=lfs -text
+*.flp filter=lfs diff=lfs merge=lfs -text
+*.wav filter=lfs diff=lfs merge=lfs -text
+*.flac filter=lfs diff=lfs merge=lfs -text
