@@ -1,3 +1,12 @@
+dev_08.08.24::::::::::::::::::::::::::::::::::::::::.
+
+    · He afegit els projectes de FL al projecte de Godot (i per tant de Git). Empro 'Zipped Song Files' per compactar una mica totes les dades de cada projecte.
+
+    · He deixat casi llest el tema Breaks Groc.
+
+    · He començat el tema Breaks Gris (color provisional?)
+
+
 dev_07.08.24::::::::::::::::::::::::::::::::::::::::.
 
     · He arreglat la paleta morada perquè sigui visible. Té un rollo molt neó que em mola però s'haurà de contrastar amb altres monitors.
