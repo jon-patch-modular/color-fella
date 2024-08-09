@@ -1,3 +1,9 @@
+dev_09.08.24::::::::::::::::::::::::::::::::::::::::.
+
+	· He pullejat el projecte a la torre Windows
+	
+	· He afegit Crimson Cry i els temes en wav/flac al projecte
+
 dev_08.08.24::::::::::::::::::::::::::::::::::::::::.
 
     · He afegit els projectes de FL al projecte de Godot (i per tant de Git). Empro 'Zipped Song Files' per compactar una mica totes les dades de cada projecte.
