@@ -22,31 +22,38 @@ var normalized_direction: int:
 	get: 
 		if direction >= 0: return 1
 		else: return -1
+		
+
 
 #references------
 @onready var ray_cast_2d_r: RayCast2D = $"RayCast2D R"
 @onready var ray_cast_2d_l: RayCast2D = $"RayCast2D L"
 
-@onready var target_direction = normalized_direction
+#----variables----
+@onready var previous_direction : int
+@onready var target_direction : int = normalized_direction
+
 func _ready() -> void:
 	#initialize stuffs
 	flipped.emit(normalized_direction)
 	super()
 
 func _physics_process(delta:float) -> void:
-	#Define target direction depending on collision situation
+	#keep track of previous direction, compare to current
+	if previous_direction == -normalized_direction:
+		flipped.emit(normalized_direction)
+		print("print(print)")
 	
+	previous_direction = normalized_direction
 	
 	#flip on raycast hit only if facing that direction (with nullchecks)
 	if ray_cast_2d_r == null: printerr(name + " is missing right raycast!")
 	elif ray_cast_2d_r.is_colliding() && target_direction >=0:
 		target_direction = -1
-		if (normalized_direction < 0): flipped.emit(normalized_direction)
 	
 	if ray_cast_2d_l == null: printerr(name + " is missing left raycast!")
 	elif ray_cast_2d_l.is_colliding() && direction <=0:
 		target_direction = 1
-		if (normalized_direction > 0): flipped.emit(normalized_direction)
 	
 	#Change direction gradually to turn around smoothly (if you can call this smooth lmao)
 	direction += target_direction * acceleration * delta	

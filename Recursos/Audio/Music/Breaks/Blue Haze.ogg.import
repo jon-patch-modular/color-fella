@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ck837c02qxfjs"
+path="res://.godot/imported/Blue Haze.ogg-b57a9c689d02f5de08c0ac250237337a.oggvorbisstr"
+
+[deps]
+
+source_file="res://Recursos/Audio/Music/Breaks/Blue Haze.ogg"
+dest_files=["res://.godot/imported/Blue Haze.ogg-b57a9c689d02f5de08c0ac250237337a.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=32.0
+bpm=150.0
+beat_count=400
+bar_beats=4

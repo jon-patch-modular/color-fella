@@ -1,11 +1,22 @@
 extends AudioStreamPlayer
 
+@export var tempo: float:
+	get:
+		if tempo == 0:
+			printerr("Player tempo set to 0 - Space-time collapse narrowly avoided")
+			return 0.001
+		return tempo
+	set(value):
+		if value == 0:
+			printerr("Attempt to set player tempo to 0 - Mathematical singularity corrected") 
+			return
+		tempo = value
 
 @export var speed_mode : SpeedMode = SpeedMode.boring
 var speed_ratios : Dictionary = {
 	SpeedMode.boring: 1.0, 
 	SpeedMode.vapor: 0.7, 
-	SpeedMode.night: 1.2, 
+	SpeedMode.night: 1.17, 
 	SpeedMode.help: 2.5, 
 	SpeedMode.snooze: 0.4
 	}

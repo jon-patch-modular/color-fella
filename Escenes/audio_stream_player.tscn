@@ -1,11 +1,14 @@
 [gd_scene load_steps=3 format=3 uid="uid://c7y05oxjngabo"]
 
-[ext_resource type="AudioStream" uid="uid://o6mrbxeuja60" path="res://Recursos/Audio/Music/Purple Panic.ogg" id="1_mjudf"]
+[ext_resource type="AudioStream" uid="uid://ca34l15crmb15" path="res://Recursos/Audio/Music/Breaks/Crimson Cry.ogg" id="1_nnlyn"]
 [ext_resource type="Script" path="res://Codi/music_parameters.gd" id="2_ghitt"]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer"]
-stream = ExtResource("1_mjudf")
+stream = ExtResource("1_nnlyn")
+volume_db = 5.622
 pitch_scale = 0.72
 autoplay = true
 bus = &"BGM"
 script = ExtResource("2_ghitt")
+tempo = 150.0
+speed_mode = -10

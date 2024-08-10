@@ -1,8 +1,22 @@
 dev_09.08.24::::::::::::::::::::::::::::::::::::::::.
 
+	· He odiat Git i descobert la importància de no deixar res sense pushejar.
+
 	· He pullejat el projecte a la torre Windows
 	
 	· He afegit Crimson Cry i els temes en wav/flac al projecte
+
+	· He arreglat la paleta del robot ordinador blau
+
+	· He arreglat sprite flipper i els signals que el fan funcionar
+
+	· He afegit un començament de funcionalitat per adaptar velocita d'animació al tempo de cada cançó diferent
+
+	· Ara la paleta del robot està arreglada.
+
+	· He exportat tots els temes a ogg vorbis i he definit els loops
+
+	· He estat com dos hores escoltant els temes accelerats i ralentitzats
 
 dev_08.08.24::::::::::::::::::::::::::::::::::::::::.
 

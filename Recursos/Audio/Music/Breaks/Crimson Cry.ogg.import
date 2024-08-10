@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ca34l15crmb15"
+path="res://.godot/imported/Crimson Cry.ogg-85bc7de2f66acec813e6f60f63ec751b.oggvorbisstr"
+
+[deps]
+
+source_file="res://Recursos/Audio/Music/Breaks/Crimson Cry.ogg"
+dest_files=["res://.godot/imported/Crimson Cry.ogg-85bc7de2f66acec813e6f60f63ec751b.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=135.0
+beat_count=567
+bar_beats=4

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://biis1x7d806p4"
+path="res://.godot/imported/Blue Haze 0db.wav-148c6980955bc7c98cabcdde4e08c7c1.sample"
+
+[deps]
+
+source_file="res://Recursos/Audio/_lossless/Breakbeat/Blue Haze 0db.wav"
+dest_files=["res://.godot/imported/Blue Haze 0db.wav-148c6980955bc7c98cabcdde4e08c7c1.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
