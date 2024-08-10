@@ -15,6 +15,10 @@ dev_10.08.24::::::::::::::::::::::::::::::::::::::::.
     · Aixafar enemics a lo Mario ara és parcialment possible
         (falta el rebot - potser no cal que reboti, simplement et quedes de peu)
 
+    · Començat el tileset groc
+
+    · Retocat el tema gris
+
 
 dev_09.08.24::::::::::::::::::::::::::::::::::::::::.
 
