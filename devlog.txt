@@ -1,3 +1,21 @@
+dev_10.08.24::::::::::::::::::::::::::::::::::::::::.
+
+    · he cobrat el paro!! :p
+
+    · Eliminats rastres del plugin Git del projecte (ja no dóna aquell error cada cop)
+
+    · la senyal de HealthChanged ara inclou un bool per saber si s'ha rebut dolor
+
+    · Afegides animacions de dolor i mort, i funcionalitat de quasi-state machine per evitar zombisme
+
+    · Paleta més brillant per jugador i enemics
+
+    · Chonker es mou més fi i ja no vibra intensament
+
+    · Aixafar enemics a lo Mario ara és parcialment possible
+        (falta el rebot - potser no cal que reboti, simplement et quedes de peu)
+
+
 dev_09.08.24::::::::::::::::::::::::::::::::::::::::.
 
 	· He odiat Git i descobert la importància de no deixar res sense pushejar.

@@ -10,15 +10,19 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var falldown = false
 var jumped = false
 
-@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+@onready var player_animation: PlayerAnimation = $AnimatedSprite2D
+
 
 
 func _physics_process(delta):
+	
+	#Fall down if on air
 	if not is_on_floor():
-		# Add the gravity.
 		velocity.y += gravity * delta
 		
-
+	#Dead people aren't supposed to move
+	if !alive: return #lmao
+	
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor() and alive:
 		velocity.y = JUMP_VELOCITY
@@ -28,11 +32,10 @@ func _physics_process(delta):
 	
 	#Orient sprite TODO: idea - canviar per senyals i reorientar per script al propi AnimatedSprite
 	if direction > 0 && alive:
-		animated_sprite.flip_h = false
+		player_animation.flip_h = false
 	elif direction < 0 && alive:
-		animated_sprite.flip_h = true
+		player_animation.flip_h = true
 	
-	if !alive: return #lmao
 	
 	#Choose animations for floor
 	if(is_on_floor()):
@@ -41,22 +44,22 @@ func _physics_process(delta):
 		falldown = false
 		
 		if direction == 0:
-			animated_sprite.play("Idle")
+			player_animation.play_safe("Idle")
 		else:
-			animated_sprite.play("Run")
+			player_animation.play_safe("Run")
 		
 	#choose animations for air
 	else:
 		#animate falling
 		if velocity.y >= 0 && !falldown:
-			animated_sprite.play("Jump Down")
+			player_animation.play_safe("Jump Down")
 			
 			falldown = true
 			jumped = false
 			
 		#animate jumping
 		elif velocity.y < 0 && !jumped:
-			animated_sprite.play("Jump Up")
+			player_animation.play_safe("Jump Up")
 			
 			jumped = true
 			falldown = false
@@ -71,7 +74,5 @@ func _physics_process(delta):
 
 	move_and_slide()
 
-#detect death idk
-func _on_rip() -> void:
+func _on_fucking_dead() -> void:
 	alive = false
-	animated_sprite.play("Die Lmao")

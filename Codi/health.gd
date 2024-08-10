@@ -3,7 +3,7 @@ class_name Health
 extends Node2D
 
 #__Events______
-signal health_changed(health:int, max_health:int) 
+signal health_changed(health:int, max_health:int, hurt:bool) 
 signal ceased_to_be 
 
 
@@ -17,7 +17,7 @@ signal ceased_to_be
 		if value != max_health:
 			
 			#Emut signal and apply value
-			health_changed.emit(health, max_health)
+			health_changed.emit(health, max_health, false)
 			max_health = value
 			
 			#Make sure to keep health within bounds (upper boundary only :o )
@@ -27,13 +27,21 @@ signal ceased_to_be
 @export var immortality_time: float = 1.5
 
 #__Internal variables__
+@onready var dead : bool:
+	get:
+		if health <= 0: return true
+		else: return false
+
 @onready var health: int = max_health: #@onready: definida quan max_health ja existeix
 	get: return health
 	
 	set(value):
-		#Do not decrease health during invincibility frames
-		if value < health && immortal:
-			return
+		var hurt: bool = false
+		#Have we been hurt?
+		if value < health:  
+			#no you don't
+			if immortal: return
+			else: hurt = true
 		
 		#Set health within correct boundaries and store value.
 		var clamperino = clampi(value, 0, max_health)
@@ -41,7 +49,7 @@ signal ceased_to_be
 		
 		print(get_parent().name + "'s current health is " + str(clamperino))
 		
-		health_changed.emit(health, max_health)
+		health_changed.emit(health, max_health, hurt)
 		
 		#Ask for a refund for this norwegian blue (emit signal and output debug)
 		if health == 0:

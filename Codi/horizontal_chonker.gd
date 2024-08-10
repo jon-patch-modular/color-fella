@@ -42,17 +42,16 @@ func _physics_process(delta:float) -> void:
 	#keep track of previous direction, compare to current
 	if previous_direction == -normalized_direction:
 		flipped.emit(normalized_direction)
-		print("print(print)")
 	
 	previous_direction = normalized_direction
 	
 	#flip on raycast hit only if facing that direction (with nullchecks)
 	if ray_cast_2d_r == null: printerr(name + " is missing right raycast!")
-	elif ray_cast_2d_r.is_colliding() && target_direction >=0:
+	elif ray_cast_2d_r.is_colliding() && target_direction == 1:
 		target_direction = -1
 	
 	if ray_cast_2d_l == null: printerr(name + " is missing left raycast!")
-	elif ray_cast_2d_l.is_colliding() && direction <=0:
+	elif ray_cast_2d_l.is_colliding() && direction == -1:
 		target_direction = 1
 	
 	#Change direction gradually to turn around smoothly (if you can call this smooth lmao)
