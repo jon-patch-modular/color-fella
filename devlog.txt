@@ -16,6 +16,8 @@ dev_13.08.24::::::::::::::::::::::::::::::::::::::::.
 
     · Començat el tema breaks taronja
 
+    · Creat sprites per a enemic volador lila
+
 
 dev_10.08.24::::::::::::::::::::::::::::::::::::::::.
 
