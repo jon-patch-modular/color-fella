@@ -1,3 +1,22 @@
+dev_13.08.24::::::::::::::::::::::::::::::::::::::::.
+
+    · ...........................
+
+    · Joder tio resulta que sostenir arxius grans per un tubo no és possible en repositoris gratuïts
+
+    · Ara els FLP i els exports sense pèrdua no estan al repositori, però hi resten els .ogg
+
+    · No recordo si hi ha algun altre canvi però sento sed de sang
+
+    · Ah si el tileset groc lol
+
+    · He estat molt ocupat trencant-me el cap amb Git, VC i Github i no he progressat molt amb el joc
+
+    · M'he carregat i arreglat la tecla [s] del teclat.
+
+    · Començat el tema breaks taronja
+
+
 dev_10.08.24::::::::::::::::::::::::::::::::::::::::.
 
     · he cobrat el paro!! :p
