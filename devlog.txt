@@ -1,3 +1,10 @@
+dev_14.08.24::::::::::::::::::::::::::::::::::::::::.
+	des de torre
+	
+	· Afegit invincibility frames
+	
+	· Progrés en Breakbeat taronja (no commitejat)
+
 dev_13.08.24::::::::::::::::::::::::::::::::::::::::.
 
     · ...........................

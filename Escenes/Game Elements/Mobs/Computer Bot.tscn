@@ -77,6 +77,7 @@ debug_color = Color(0.966407, 0, 0.480722, 0.42)
 
 [node name="Health" type="Node2D" parent="."]
 script = ExtResource("4_ds6s7")
+max_health = 5
 
 [node name="Label" parent="Health" instance=ExtResource("5_jsmtw")]
 

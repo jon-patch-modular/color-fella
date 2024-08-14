@@ -13,7 +13,7 @@ var dead_played : bool = false
 @onready var bang_framerate : float:
 	# framerate = BPM * 6 frames per beat / 60 seconds per minute
 	get: return MusicPlayer.tempo / 10 
-	#idea: emetre enyal al canviar el tempo per definir aquesta variable i aplicar-la a la animació
+	#idea: emetre senyal al canviar el tempo per definir aquesta variable i aplicar-la a la animació
 
 #Play idle if not suffering
 func play_safe(animation_name : StringName) -> void:

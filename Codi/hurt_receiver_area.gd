@@ -2,18 +2,36 @@
 class_name HurtReceiverArea
 extends Area2D
 
-#Emmagatzema node germà Health quan les escenes estiguin carregades
+#__references______
 @onready var health : Health = $"../Health"
 
 #Connecta senyal
 func _ready() -> void:
 	if !area_entered.is_connected(_on_area_entered): area_entered.connect(_on_area_entered)
+	
+	#TODO: Continuous overlap
+	
 
 func _on_area_entered(hurt : HurtfulArea):
+	#Checks
+	if hurt == null: return 
+	if hurt.continuous: return
 	
+	do_damage(hurt)
+
+#TODO
+func _on_area_stayed(hurt: HurtfulArea):
+	#Checks
+	if hurt == null: return
+	if !hurt.continuous: return
+	
+	do_damage(hurt)
+	
+func do_damage(hurt: HurtfulArea) -> void:
 	#Nullchecks: 
-	if hurt == null: return #check whether we collided with a HurtfulArea
-	if health == null: printerr("Missing health component reference"); return #Check for missing health component, print appropiate error message
+	
+	if health == null: printerr(get_parent().name + ": Missing health component reference"); return 
+	
 	
 	#INSTAKILL BABY
 	if hurt.instakill: 

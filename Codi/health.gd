@@ -4,8 +4,11 @@ extends Node2D
 
 #__Events______
 signal health_changed(health:int, max_health:int, hurt:bool) 
-signal ceased_to_be 
+signal ceased_to_be
+signal invincibility_changed(invincible:bool)
 
+#__references______
+var inv_timer : Timer
 
 #__Parameters
 @export var max_health: int = 20:
@@ -41,7 +44,11 @@ signal ceased_to_be
 		if value < health:  
 			#no you don't
 			if immortal: return
-			else: hurt = true
+			
+			#OUCH
+			else: 
+				hurt = true
+				immortal = true
 		
 		#Set health within correct boundaries and store value.
 		var clamperino = clampi(value, 0, max_health)
@@ -56,8 +63,34 @@ signal ceased_to_be
 			print("This is an EX-" + get_parent().name) #DEBUG
 			ceased_to_be.emit()
 
+var immortal: bool = false:
+	get: return immortal
+	set(lmao):
+		immortal = lmao
+		invincibility_changed.emit(true)
+		if inv_timer != null: inv_timer.start(immortality_time)
+
+#__callbacks______
+
 func _ready() -> void:
 	health_changed.emit(health, max_health) #initialize health stuffs
 	
-var immortal: bool = false
+	inv_timer = init_timer() #create immortality timer	
 
+#called when you're no longer immortal my dude lmao
+func _on_timerino() -> void:
+	immortal = false
+	invincibility_changed.emit(false)
+
+#__internal meth______
+func init_timer() -> Timer:
+	
+	#hopefully instantiate and set up a child timer
+	var timerino = Timer.new()
+	timerino.one_shot = true
+	
+	#Connect the timer and its callback
+	add_child(timerino)
+	timerino.timeout.connect(_on_timerino)
+	
+	return timerino
