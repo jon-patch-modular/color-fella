@@ -145,7 +145,6 @@ sources/2 = SubResource("TileSetAtlasSource_d1iqq")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_ullkw")
-collision_visibility_mode = 1
 format = 2
 layer_0/name = "GrackBound"
 layer_0/modulate = Color(0.791318, 0.486532, 0.509276, 1)
