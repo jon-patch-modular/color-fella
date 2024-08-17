@@ -1,4 +1,5 @@
-dev_15.08.24::::::::::::::::::::::::::::::::::::::::.
+
+dev_17.08.24::::::::::::::::::::::::::::::::::::::::.
     des de portàtil
 
     · Afegit punxes liles i grogues
@@ -8,6 +9,16 @@ dev_15.08.24::::::::::::::::::::::::::::::::::::::::.
     · Ara s'assumeix una crosta de damage receiver, no de damage zone
 
     ·
+
+=======
+dev_16.08.24::::::::::::::::::::::::::::::::::::::::.
+	des de torre
+	
+	· Començat tileset verd
+	
+	· Nivells per provar els tilesets
+	
+	· Visitat Amitges per primer cop en la vida!! (per fi)
 
 
 dev_14.08.24::::::::::::::::::::::::::::::::::::::::.
