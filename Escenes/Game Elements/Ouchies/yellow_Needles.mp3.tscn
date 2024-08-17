@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cw3p0sec0etx1"]
+
+[ext_resource type="PackedScene" uid="uid://1i3mbbls6k5k" path="res://Escenes/Game Elements/Ouchies/Needles.mp3.tscn" id="1_v8xan"]
+
+[node name="Comfy Block ; )" instance=ExtResource("1_v8xan")]
+
+[node name="Sprite2D" parent="." index="0"]
+region_rect = Rect2(0, 16, 16, 16)

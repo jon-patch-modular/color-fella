@@ -57,7 +57,7 @@ move_right={
 2d_physics/layer_1="Default"
 2d_physics/layer_2="Player"
 2d_physics/layer_3="Enemies"
-2d_physics/layer_4="killzone"
+2d_physics/layer_4="Hazards"
 2d_physics/layer_5="Oo Feet"
 
 [rendering]

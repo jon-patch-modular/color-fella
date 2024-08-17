@@ -103,7 +103,6 @@ collision_mask = 18
 script = ExtResource("7_2btrk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtReceiverArea"]
-visible = false
 shape = SubResource("RectangleShape2D_82jso")
 debug_color = Color(0.72686, 0.525875, 0, 0.42)
 

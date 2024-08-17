@@ -265,14 +265,14 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nyeyq"]
 radius = 5.0
-height = 23.0
+height = 24.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_in2hu"]
-radius = 5.0
-height = 22.0
+radius = 6.0
+height = 26.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hr7dx"]
-radius = 4.0
+radius = 4.12311
 
 [node name="Player2D" type="CharacterBody2D"]
 z_index = 10
@@ -292,7 +292,7 @@ autoplay = "Idle"
 script = ExtResource("5_5bwpl")
 
 [node name="PhysicsHitbox" type="CollisionShape2D" parent="."]
-position = Vector2(0, -11.5)
+position = Vector2(0, -12)
 shape = SubResource("CapsuleShape2D_nyeyq")
 script = ExtResource("5_n8ndh")
 
@@ -302,11 +302,13 @@ collision_mask = 5
 script = ExtResource("7_v1kkh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtReceiverArea"]
-position = Vector2(0, -11)
+position = Vector2(0, -12)
 shape = SubResource("CapsuleShape2D_in2hu")
+debug_color = Color(0.679951, 0.503828, 0, 0.42)
 
 [node name="Health" type="Node2D" parent="."]
 script = ExtResource("8_md152")
+immortality_time = 0.5
 
 [node name="Label" parent="Health" instance=ExtResource("9_as7wq")]
 
@@ -316,7 +318,7 @@ collision_mask = 4
 script = ExtResource("12_ubdp5")
 
 [node name="StompHitbox" type="CollisionShape2D" parent="HurtfulArea"]
-position = Vector2(0, -3)
+position = Vector2(0, -2)
 shape = SubResource("CircleShape2D_hr7dx")
 debug_color = Color(0.961976, 0, 0.507259, 0.42)
 
